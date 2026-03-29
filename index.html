@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="flex_container">
+    <p id="timer">3</p>
+  </div>
+
+</body>
+
+<script>
+  let time = 3;
+
+
+  document.body.addEventListener("click", function () {
+
+    let interval_function = setInterval(function () {
+      time -= 1;
+      document.querySelector("#timer").textContent = time;
+      if (time <= 0) {
+        clearInterval(interval_function)
+        document.body.style.backgroundColor = "orange";
+        document.querySelector("#timer").textContent = ""
+      }
+    }, 1000)
+  });
+
+</script>
+
+</html>

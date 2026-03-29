@@ -1,0 +1,13 @@
+.flex_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vH;
+}
+
+body {
+  background-color: slategray;
+  font-size: 76px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
